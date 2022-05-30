@@ -1,0 +1,74 @@
+
+.logo-container {margin: 62px 0 57px 0;}
+
+header h1 {
+  font-size: clamp(1.6875rem, 6vw, 3.25rem);
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.sub-header {
+  font-size: clamp(0.9375rem, 3vw, 1.125rem) ;
+  margin: 15px auto 33px;
+  width: 87%;
+  max-width: 445px;
+}
+
+/* Switches icons on top for mobile and on bottom for tablet */
+.flex-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 48px;
+}
+
+.email-container {
+  display: flex;
+  justify-content: center;
+}
+
+.email-input {
+  background-color: var(--clr-dark-grey);
+  width: 100%;
+  padding: 1em 0 1em 32px;
+  margin-bottom: 16px;
+}
+
+.email-submit {
+  background-color: var(--clr-accent);
+  width: 100%;
+  padding: 1em 0 1em;
+}
+
+#errorMsg {
+  display: none;
+  color: #FB3E3E;
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.spotify-icon {
+  width: 56px;
+  height: 17px;
+}
+
+.apple-icon {
+  width: 45px;
+  height: 17px;
+}
+
+.google-icon {
+  width: 73px;
+  height: 11px;
+}
+
+.pocket-cast-icon {
+  width: 77px;
+  height: 15px;
+}
+

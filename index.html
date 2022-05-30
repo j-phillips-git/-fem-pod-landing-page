@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Pod request access landing page</title>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+  <!-- EXTERNAL STYLES -->
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- SCRIPT -->
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <section>
+    <div class="logo-container">
+      <img src="./assets/images/desktop/logo.svg" alt="teal circle with sound wave inside">
+    </div>
+  
+    <img class="hero-img-tablet" src="./assets/images/tablet/image-host.jpg"
+      alt="Man with headphones on talking into mic">
+    <img class="hero-img-desktop" src="./assets/images/desktop/image-host.jpg"
+      alt="Man with headphones on talking into mic">
+    <img class="dots" src="./assets/images/desktop/bg-pattern-dots.svg" alt="32 green dots">
+  </section>
+
+  <main>
+    <header>
+      <h1>
+        <span class="header-green">Publish your podcasts</span> <br> everywhere.
+      </h1>
+      <p class="sub-header">
+        Upload your audio to Pod with a single click we'll then distribute your podcast to Spotify, Apple Podcasts,
+        Google Podcasts, Pocket Casts and more!
+      </p>
+    </header>
+
+    <div class="flex-reverse">
+      <!--Switches icons on top for mobile and on bottom for tablet-->
+      <div class="email-container">
+        <form id="form" action="/" method="get">
+          <label for="email"></label>
+          <input id="email" class="email-input" type="email" name="email" placeholder="Email address"
+            oninput="emailChecker()">
+          <button id="submit" class="email-submit" type="submit">Request Access</button>
+          <p id="errorMsg" class="email-error">Oops! Please check your email</p>
+        </form>
+      </div>
+
+      <div class="icon-container">
+        <img class="icon spotify-icon" src="./assets/images/desktop/spotify.svg" alt="Spotify">
+        <img class="icon apple-icon" src="./assets/images/desktop/apple-podcast.svg" alt="Apple Podcasts">
+        <img class="icon google-icon" src="./assets/images/desktop/google-podcasts.svg" alt="Google Podcasts">
+        <img class="icon pocket-cast-icon" src="./assets/images/desktop/pocket-casts.svg" alt="Pocket Casts">
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

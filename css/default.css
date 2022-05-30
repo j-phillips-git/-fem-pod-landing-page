@@ -1,0 +1,54 @@
+:root {
+  --clr-background: #121725;
+  --clr-dark-grey: #2c344b;
+  --clr-medium-grey: #5a668a;
+  --clr-light-grey: #c2cbe5;
+  --clr-white: #fff;
+  --clr-accent: #54e6af;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+}
+
+.site-wrapper{max-width: 1440px;}
+
+.header-green {color: var(--clr-accent);}
+
+header h1,
+.email-input {color: var(--clr-white);}
+
+.sub-header {color: var(--clr-light-grey);}
+
+.icon-container {color: var(--clr-medium-grey);}
+
+.hero-img-tablet,
+.hero-img-desktop,
+.dots {display: none;}
+
+.email-input,
+.email-submit {
+  border: none;
+  font-size: 0.875rem;
+  border-radius: 28px;
+  font-weight: bold;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--clr-accent);
+}
+
+button {
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}

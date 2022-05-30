@@ -1,0 +1,128 @@
+@media screen and (max-width: 767px) {
+
+  body::before {
+    background-color: var(--clr-background);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    opacity: 0.8;
+    z-index: -100;
+  }
+  
+  body {
+    background-image: url('../assets/images/mobile/image-host.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  body {background-color: var(--clr-background);}
+
+  .hero-img-tablet {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -500;
+  }
+
+  .logo-container {
+    margin-left: 39px;
+    margin-bottom: 152px;
+  }
+
+  main {
+    background-color: var(--clr-background);
+    padding: 93px 0 0 39px;
+    width: 87.5%;
+    max-width: 723px;
+  }
+
+  header h1 {line-height: 56px;}
+
+  .sub-header {
+    margin: 31px 0 40px;
+    line-height: 25px;
+  }
+
+  /* Switches icons on top for mobile and on bottom for tablet */
+  .flex-reverse {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .email-container {justify-content: initial;} 
+
+  form {
+    width: 69%;
+    position: relative;
+  }
+
+  .email-input {
+    padding: 1.14em 0 1.14em 32px;
+  }
+
+  .email-submit {
+    position: absolute;
+    right: 4px;
+    width: 35%;
+    top: 3.5px;
+    padding: 0.9em 0 0.9em 0;
+  }
+
+  #errorMsg {margin:0 0 0 20px;}
+
+  .email-submit:hover {background-color: #B3FFE2;}
+
+  .icon-container {
+    margin: 49px 0 0 0;
+    gap: 40px;
+  }
+
+  .icon {
+    width: initial;
+    height: initial;
+  }
+
+  .dots {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  .hero-img-tablet {display: none;}
+
+  .hero-img-desktop {
+    display: block;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    z-index: -100;
+  }
+
+  .logo-container {margin-left: 165px;}
+  
+  main {margin-left: 165px;}
+  
+  header h1 {line-height: 62px;}
+
+  .sub-header {line-height: 28px;}
+
+  .dots {
+    right: 0;
+    bottom: 80px;
+    left: initial;
+  }
+}
